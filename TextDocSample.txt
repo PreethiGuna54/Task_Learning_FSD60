@@ -1,0 +1,32 @@
+List<Integer> myList = Arrays.asList(10,15,8,49,25,98,98,32,15);
+HashSet check= new HashSet();
+List nw=myList.filter(x->(!check.add)).map(x->x).forEach(x->System.out.println(x));
+
+
+Recursively remove all adjacent duplicates Input: azxxzy  Output: ay  First “azxxzy” is reduced to “azzy”.  The string “azzy” contains duplicates,  so it is further reduced to “ay”.
+
+
+ var arr=userInput[0].split(" ");
+ let hcf;
+ for(var i=1;i<=arr[0]&&i<=arr[1];i++){
+     if(arr[0]%i==0 && arr[1]%i==0){
+         hcf=i;
+     }
+ }
+ console.log(hcf);
+ var num = parseInt(userInput[0])*((parseInt(userInput[0]))+1)
+ console.log(num/2);
+ 
+  var arr =userInput[0].split("");
+     arr.sort();
+     var even="";
+     var odd="";
+    for(var i=0; i<arr.length;i++){
+        if(arr[i]%2 == 0){
+            even += arr[i]+" ";
+        }else{
+            odd += arr[i]+" ";
+        }
+    }
+    console.log(even.trim());
+    console.log(odd.trim());
